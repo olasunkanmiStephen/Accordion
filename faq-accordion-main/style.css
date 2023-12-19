@@ -11,6 +11,8 @@ body{
     justify-content: center;
     height: 100vh;
     background: rgb(245, 231, 245);
+    flex-direction: column;
+    gap: 20%;
 }
 
 .bg {
@@ -18,9 +20,12 @@ body{
     z-index: -3;
     left: 0;
     right: 0;
+    top: 0%;;
     width: 100vw;
-    top: 0%;
-    height: 60px;
+}
+
+.bg img{
+    width: 100%;
 }
 
 .accordion {
@@ -45,9 +50,10 @@ body{
 
 .questions{
     display: flex;
-    justify-content: space-around;
     font-size: 20px;
     margin-bottom: 4%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -76,18 +82,17 @@ body{
 }
 
 
-@media (max-width: 812px) {
-    
-.accordion {
-    width: 60%;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 0 4px lightblue;
-    height: fit-content;
+.content-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: start;
+    justify-content: stretch;
+}
+
+@media (max-width: 675px) {
+    
+.accordion {
+    width: 90%;
 }
 
 }
